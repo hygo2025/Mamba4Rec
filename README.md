@@ -41,3 +41,17 @@ Specifying the dataset in `config.yaml` will trigger an automatic download. Plea
 ## Acknowledgment
 
 This project is based on [Mamba](https://github.com/state-spaces/mamba), [Causal-Conv1d](https://github.com/Dao-AILab/causal-conv1d), and [RecBole](https://github.com/RUCAIBox/RecBole). Thanks for their excellent works.
+```
+ conda create -n mamba4recfk
+ conda activate mamba4recfk
+ conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia 
+ conda install -c nvidia cuda-toolkit
+ pip install "causal-conv1d>=1.4.0"
+```
+
+```
+cd ..
+git clone git@github.com:state-spaces/mamba.git
+cd mamba
+pip install . --no-build-isolation
+```

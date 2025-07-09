@@ -1,6 +1,12 @@
 import sys
 import logging
 from logging import getLogger
+import numpy as np
+
+np.float_ = np.float64
+np.complex_ = np.complex128
+np.unicode_ = np.str_
+
 from recbole.utils import init_logger, init_seed
 from recbole.trainer import Trainer
 from mamba4rec import Mamba4Rec

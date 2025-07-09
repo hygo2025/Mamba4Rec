@@ -4,6 +4,11 @@ from mamba_ssm import Mamba
 from recbole.model.abstract_recommender import SequentialRecommender
 from recbole.model.loss import BPRLoss
 
+#Plotar a distribuicao da quebra entre eventos
+## ccdf tempo entre eventos no eixo x e a ccdf
+# se a curva tiver uma queda de comportamento eu vou ter a quebra ideal do tamanho da session
+
+
 class Mamba4Rec(SequentialRecommender):
     def __init__(self, config, dataset):
         super(Mamba4Rec, self).__init__(config, dataset)
